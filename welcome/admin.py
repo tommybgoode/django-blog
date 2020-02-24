@@ -1,11 +1,12 @@
 from django.contrib import admin
-
 from .models import PageView
+from .models import Post
 
-# Register your models here.
+admin.site.register(Post)
 
 
 class PageViewAdmin(admin.ModelAdmin):
     list_display = ['hostname', 'timestamp']
+
 
 admin.site.register(PageView, PageViewAdmin)
