@@ -1,5 +1,4 @@
 import os
-from django.shortcuts import render
 from django.http import HttpResponse
 from . import database
 from .models import PageView, Post
