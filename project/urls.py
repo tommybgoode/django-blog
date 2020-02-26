@@ -10,7 +10,7 @@ urlpatterns = [
 
     url(r'^$', post_list, name='post_list'),
     url(r'^health$', health),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/', admin.site.urls),
     url(r'^home$', post_list, name='post_list'),
     url(r'^home/post/(?P<pk>[0-9]+)/$', post_detail, name='post_detail'),
     url(r'^post/new/', post_new, name='post_new'),
